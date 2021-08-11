@@ -8,5 +8,16 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.0" />
   </ItemGroup>
 
+  <!-- setting Nlog -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\NLog.Extensions.Logging\NLog.Extensions.Logging.csproj" />
+  </ItemGroup>
 
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+ <!-- setting Nlog -->
+ 
 </Project>
